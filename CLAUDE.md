@@ -11,7 +11,7 @@ Privater Auftritt, ergänzt das LinkedIn-Profil. Kommunikation mit Cornelis: Deu
 
 ## Struktur
 - `index.html` – Hero, Über mich, Themen, Werdegang, Projekte, Kontakt
-- `impressum.html`, `datenschutz.html` – Rechtstexte mit Platzhaltern `[bitte ergänzen]`
+- `impressum.html`, `datenschutz.html` – Rechtstexte (ausgefüllt)
 - `assets/style.css` – alle Styles, Farben als CSS-Variablen in `:root`
 - `assets/main.js` – nur Kleinkram (Jahr im Footer, Mobile-Menü)
 - `assets/portrait.jpg` – Porträtfoto (LinkedIn-Profilfoto, 800×800)
