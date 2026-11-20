@@ -14,7 +14,7 @@ Privater Auftritt, ergänzt das LinkedIn-Profil. Kommunikation mit Cornelis: Deu
 - `impressum.html`, `datenschutz.html` – Rechtstexte mit Platzhaltern `[bitte ergänzen]`
 - `assets/style.css` – alle Styles, Farben als CSS-Variablen in `:root`
 - `assets/main.js` – nur Kleinkram (Jahr im Footer, Mobile-Menü)
-- `assets/portrait.jpg` – Porträtfoto (kommt noch; bis dahin Platzhalter mit Initialen in `index.html`)
+- `assets/portrait.jpg` – Porträtfoto (LinkedIn-Profilfoto, 800×800)
 
 Lokal ansehen: `index.html` im Browser öffnen oder `python3 -m http.server 8000` im Ordner und `http://localhost:8000`.
 
@@ -24,13 +24,12 @@ Hinweis: Der Vorschau-Runner der Claude-App darf auf macOS nicht direkt im Deskt
 1. Leeres Repo auf GitHub anlegen (z. B. `cornelisebel.github.io` → Seite liegt dann direkt unter dieser Adresse).
 2. `git remote add origin …` und `git push -u origin main`.
 3. GitHub → Settings → Pages → Source „Deploy from a branch“, Branch `main`, Ordner `/ (root)`.
-4. Vorher: Impressum/Datenschutz ausgefüllt, `noindex` dort entfernt.
 
 ## Harte Inhaltsregeln
 - **SuperNurse** nur als normale Station im Werdegang (Rolle, Zeitraum). Keine Kunden, Preise, Kennzahlen, Interna, Prozesse.
 - **„Cornelis Ebel - Ventures“** wird nicht genannt.
 - **SuperNurse-Mailadresse** kommt nicht auf die Seite. Kontakt läuft über LinkedIn.
-- **Impressum/Datenschutz:** Angaben (Name, Anschrift, Kontakt) liefert Cornelis selbst. Nichts erfinden, Platzhalter stehen lassen, bis er sie liefert. Seiten nicht live schalten, solange Platzhalter drin sind.
+- **Impressum/Datenschutz:** Angaben hat Cornelis am 20.11.2026 geliefert (private Anschrift Meerbusch, GMX-Adresse). Änderungen daran nur mit seinen Angaben, nichts erfinden.
 - Keine erfundenen Zahlen oder Projekte. Belegbare Fakten nur aus dem LinkedIn-Projekt.
 
 ## Quellen (nur lesen, dort nichts ändern)
@@ -44,7 +43,6 @@ Hinweis: Der Vorschau-Runner der Claude-App darf auf macOS nicht direkt im Deskt
 Direkt, nahbar, konkret. Keine KI-Floskeln („Lass uns eintauchen“, „Game Changer“), keine Emoji-Wände. Pfeile (→) sparsam als Stilmittel ok.
 
 ## Offene Punkte
-- Porträtfoto
-- Impressum-/Datenschutz-Angaben
+- Prüfen, ob `cornelis.ebel@gmx.de` erreichbar ist (laut LinkedIn-Projekt war eine alte GMX-Adresse nicht erreichbar)
 - LinkedIn-URL: aktuell `linkedin.com/in/cornelis-ebel-a3a820288`; falls die Vanity-URL `/cornelis-ebel` kommt, in `index.html` und Footer der Unterseiten ersetzen
 - Werdegang abgleichen, sobald `PROFIL_NEU.md` final ist
