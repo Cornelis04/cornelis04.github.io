@@ -4,7 +4,7 @@ Privater Auftritt, ergänzt das LinkedIn-Profil. Kommunikation mit Cornelis: Deu
 
 ## Entscheidungen (20.11.2026)
 - **Stack:** statisches HTML/CSS/JS, keine Build-Tools, kein npm, keine Frameworks.
-- **Hosting:** GitHub Pages, live seit 20.11.2026 unter https://cornelis04.github.io (Repo `Cornelis04/cornelis04.github.io`, öffentlich). Jeder Push auf `main` geht nach ca. 1 Minute live, deshalb nur nach Cornelis' OK pushen. Domain-Kauf und neue Accounts nur nach seinem ausdrücklichen OK.
+- **Hosting:** GitHub Pages. War am 20.11.2026 kurz live unter https://cornelis04.github.io, danach auf Cornelis' Wunsch offline genommen (Repo in `Cornelis04/ce-website` umbenannt, Pages abgeschaltet). Code liegt weiter im öffentlichen Repo; `git push` veröffentlicht **nicht**. Wieder live gehen, eigene Domain, neue Accounts nur nach Cornelis' ausdrücklichem OK.
 - **Domain:** noch keine eigene. Kann später dazu (dann `CNAME`-Datei + DNS beim Domain-Anbieter + Eintrag unter Settings → Pages).
 - **Umfang:** Onepager (`index.html`) plus `impressum.html` und `datenschutz.html`.
 - **Stil:** hell und minimal, Editorial-Look. Systemschriften (keine Google Fonts, keine externen Requests, kein Tracking, keine Cookies). Das hält die Datenschutzerklärung schlank.
@@ -20,8 +20,9 @@ Lokal ansehen: `index.html` im Browser öffnen oder `python3 -m http.server 8000
 
 Hinweis: Der Vorschau-Runner der Claude-App darf auf macOS nicht direkt im Desktop-Ordner starten. Deshalb den Server per Terminal/Bash im Hintergrund starten; `.claude/launch.json` hängt sich nur an `http://localhost:8000` an.
 
-## Veröffentlichen
-Änderung committen, dann `git push`. GitHub baut die Seite automatisch neu (Status: `gh run list -L1`).
+## Wieder veröffentlichen (nur nach Cornelis' OK)
+- Unter `cornelis04.github.io`: Repo zurück in `cornelis04.github.io` umbenennen (`gh repo rename cornelis04.github.io -R Cornelis04/ce-website`), Remote anpassen. Pages schaltet sich dann automatisch ein.
+- Oder mit eigener Domain: Pages für `ce-website` einschalten, `CNAME`-Datei anlegen, DNS setzen.
 
 ## Harte Inhaltsregeln
 - **SuperNurse** nur als normale Station im Werdegang (Rolle, Zeitraum). Keine Kunden, Preise, Kennzahlen, Interna, Prozesse.
