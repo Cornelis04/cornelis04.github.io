@@ -4,7 +4,7 @@ Privater Auftritt, ergänzt das LinkedIn-Profil. Kommunikation mit Cornelis: Deu
 
 ## Entscheidungen (20.11.2026)
 - **Stack:** statisches HTML/CSS/JS, keine Build-Tools, kein npm, keine Frameworks.
-- **Hosting:** GitHub Pages. War am 20.11.2026 kurz live unter https://cornelis04.github.io, danach auf Cornelis' Wunsch offline genommen (Repo in `Cornelis04/ce-website` umbenannt, Pages abgeschaltet). Code liegt weiter im öffentlichen Repo; `git push` veröffentlicht **nicht**. Wieder live gehen, eigene Domain, neue Accounts nur nach Cornelis' ausdrücklichem OK.
+- **Hosting:** GitHub Pages. War am 20.11.2026 kurz live unter https://cornelis04.github.io, danach auf Cornelis' Wunsch offline genommen (Repo in `Cornelis04/ce-website` umbenannt, Pages abgeschaltet). Repo ist seit 20.11.2026 privat; `git push` veröffentlicht **nicht**. Wieder live gehen, eigene Domain, neue Accounts nur nach Cornelis' ausdrücklichem OK.
 - **Domain:** noch keine eigene. Kann später dazu (dann `CNAME`-Datei + DNS beim Domain-Anbieter + Eintrag unter Settings → Pages).
 - **Umfang:** Onepager (`index.html`) plus `impressum.html` und `datenschutz.html`.
 - **Stil:** hell und minimal, Editorial-Look. Systemschriften (keine Google Fonts, keine externen Requests, kein Tracking, keine Cookies). Das hält die Datenschutzerklärung schlank.
