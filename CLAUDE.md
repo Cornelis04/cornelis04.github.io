@@ -18,6 +18,14 @@ Privater Auftritt, ergänzt das LinkedIn-Profil. Kommunikation mit Cornelis: Deu
 
 Lokal ansehen: `index.html` im Browser öffnen oder `python3 -m http.server 8000` im Ordner und `http://localhost:8000`.
 
+Hinweis: Der Vorschau-Runner der Claude-App darf auf macOS nicht direkt im Desktop-Ordner starten. Deshalb den Server per Terminal/Bash im Hintergrund starten; `.claude/launch.json` hängt sich nur an `http://localhost:8000` an.
+
+## Veröffentlichen (erst nach Cornelis' OK)
+1. Leeres Repo auf GitHub anlegen (z. B. `cornelisebel.github.io` → Seite liegt dann direkt unter dieser Adresse).
+2. `git remote add origin …` und `git push -u origin main`.
+3. GitHub → Settings → Pages → Source „Deploy from a branch“, Branch `main`, Ordner `/ (root)`.
+4. Vorher: Impressum/Datenschutz ausgefüllt, `noindex` dort entfernt.
+
 ## Harte Inhaltsregeln
 - **SuperNurse** nur als normale Station im Werdegang (Rolle, Zeitraum). Keine Kunden, Preise, Kennzahlen, Interna, Prozesse.
 - **„Cornelis Ebel - Ventures“** wird nicht genannt.
