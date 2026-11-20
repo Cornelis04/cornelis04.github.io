@@ -4,7 +4,7 @@ Privater Auftritt, ergänzt das LinkedIn-Profil. Kommunikation mit Cornelis: Deu
 
 ## Entscheidungen (20.11.2026)
 - **Stack:** statisches HTML/CSS/JS, keine Build-Tools, kein npm, keine Frameworks.
-- **Hosting:** GitHub Pages. War am 20.11.2026 kurz live unter https://cornelis04.github.io, danach auf Cornelis' Wunsch offline genommen (Repo in `Cornelis04/ce-website` umbenannt, Pages abgeschaltet). Repo ist seit 20.11.2026 privat; `git push` veröffentlicht **nicht**. Wieder live gehen, eigene Domain, neue Accounts nur nach Cornelis' ausdrücklichem OK.
+- **Hosting:** GitHub Pages, live unter https://cornelis04.github.io (Repo `Cornelis04/cornelis04.github.io`, öffentlich). Am 20.11.2026 kurz offline/privat, am selben Tag auf Cornelis' Wunsch wieder online. Jeder `git push` auf `main` geht nach ca. 1 Minute live, deshalb nur nach Cornelis' OK pushen. Eigene Domain und neue Accounts nur nach seinem ausdrücklichen OK.
 - **Domain:** noch keine eigene. Kann später dazu (dann `CNAME`-Datei + DNS beim Domain-Anbieter + Eintrag unter Settings → Pages).
 - **Umfang:** Onepager (`index.html`) plus `impressum.html` und `datenschutz.html`.
 - **Stil:** hell und minimal, Editorial-Look. Systemschriften (keine Google Fonts, keine externen Requests, kein Tracking, keine Cookies). Das hält die Datenschutzerklärung schlank.
@@ -20,9 +20,12 @@ Lokal ansehen: `index.html` im Browser öffnen oder `python3 -m http.server 8000
 
 Hinweis: Der Vorschau-Runner der Claude-App darf auf macOS nicht direkt im Desktop-Ordner starten. Deshalb den Server per Terminal/Bash im Hintergrund starten; `.claude/launch.json` hängt sich nur an `http://localhost:8000` an.
 
-## Wieder veröffentlichen (nur nach Cornelis' OK)
-- Unter `cornelis04.github.io`: Repo zurück in `cornelis04.github.io` umbenennen (`gh repo rename cornelis04.github.io -R Cornelis04/ce-website`), Remote anpassen. Pages schaltet sich dann automatisch ein.
-- Oder mit eigener Domain: Pages für `ce-website` einschalten, `CNAME`-Datei anlegen, DNS setzen.
+## Veröffentlichen
+Änderung committen, dann `git push` (nur nach Cornelis' OK). Build-Status: `gh run list -L1`.
+Offline nehmen: Pages lässt sich bei `<user>.github.io` nicht abschalten → Repo umbenennen (`gh repo rename ce-website`), dann `gh api -X DELETE repos/Cornelis04/ce-website/pages`.
+
+## Interview (privat)
+`_interview/INTERVIEW.md` – großes Interview zu Zielen, Werdegang, Projekten, Meinungen und LinkedIn-Feinschliff. Steht in `.gitignore`, weil das Repo öffentlich ist: **nie committen**. Antworten mit `[intern]` nur als Hintergrund nutzen, nie veröffentlichen.
 
 ## Harte Inhaltsregeln
 - **SuperNurse** nur als normale Station im Werdegang (Rolle, Zeitraum). Keine Kunden, Preise, Kennzahlen, Interna, Prozesse.
@@ -32,8 +35,9 @@ Hinweis: Der Vorschau-Runner der Claude-App darf auf macOS nicht direkt im Deskt
 - Keine erfundenen Zahlen oder Projekte. Belegbare Fakten nur aus dem LinkedIn-Projekt.
 
 ## Quellen (nur lesen, dort nichts ändern)
-`/Users/cornelisebel/Desktop/LinkedIN`
+`/Users/cornelisebel/Desktop/Claude Master/SN Account/CE LinkedIN`
 - `01_Strategie/positionierung.md` – Kernthese, 3 Themen, Alleinstellung
+- `02_Profil/PROFIL_NACHBAU.md` – offene LinkedIn-Entscheidungen Block A–G
 - `02_Profil/PROFIL_NEU.md` – Werdegang, Info-Text (Stand: noch nicht final)
 - `07_Ressourcen/stimme-und-stil.md` – Tonalität
 - `tools/linkedin/ANLEITUNG.md` – LinkedIn-Connector (Projektbeschreibung)
